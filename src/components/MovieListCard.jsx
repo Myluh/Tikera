@@ -28,7 +28,7 @@ export function MovieListCard({movie}) {
             <a href="#movie">
               <img 
               className="rounded-lg h-70 w-50 object-cover"
-              src= {"/src/assets/images/" + movie.image}
+              src= {"./src/assets/images/" + movie.image}
               alt={movie.title + " posztere"} />
             </a>
           </div>
