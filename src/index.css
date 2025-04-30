@@ -1,0 +1,10 @@
+@import "tailwindcss";
+html {
+    scroll-behavior: smooth;
+  }
+body{
+    background-color: rgba(39,39,42,1);
+    background-image: url(assets/images/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
