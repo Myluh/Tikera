@@ -32,7 +32,7 @@ export function Seat({value, rowIndex, colIndex}){
     if(isSelected){
         return (
             <img 
-            src="/src/assets/images/seatSelected.png"
+            src="/assets/images/seatSelected.png"
             className="mx-0.5 cursor-pointer w-6 lg:w-7 xl:w-8"
             onClick={unReserveSeat}
             />
@@ -41,14 +41,14 @@ export function Seat({value, rowIndex, colIndex}){
     else if (value == 1 || isReserved) {
         return(
             <img 
-            src="/src/assets/images/seatBooked.png"
+            src="/assets/images/seatBooked.png"
             className="mx-0.5 w-6 lg:w-7 xl:w-8"
             />
         )
     } else {
             return(
                 <img 
-                    src="/src/assets/images/seat.png"
+                    src="/assets/images/seat.png"
                     className="mx-0.5 cursor-pointer w-6 lg:w-7 xl:w-8"
                     onClick={reserveSeat}
                     />
