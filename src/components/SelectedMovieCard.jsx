@@ -23,7 +23,7 @@ export function SelectedMovieCard() {
              <div className="self-center">
                   <img 
                   className="xl:float-left rounded-3xl h-70 w-50 object-cover mr-8 border-gray-800 border-5 shadow-xl rotate-355"
-                  src= {"/src/assets/images/" + selectedMovie.image}
+                  src= {"/assets/images/" + selectedMovie.image}
                   alt={selectedMovie.title + " posztere"} />
               </div>
               <div className="text-white font-semibold xl:text-3xl text-2xl pt-3">
