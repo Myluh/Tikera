@@ -26,7 +26,9 @@ export function SummaryCard(){
                         {sum} ft
                     </div>
                 </div> */}
-                <div className="text-white flex flex-col justify-center items-center border-gray-400/30 rounded-2xl border-1 mx-8 py-2 my-3">
+                <div className="text-white flex flex-col justify-center items-center
+                 border-gray-400/30 rounded-2xl border-1 py-2 m-2
+                 2xl:mx-8 2xl:my-3">
                     <div className="mb-1">
                         Choose your seat!
                     </div>

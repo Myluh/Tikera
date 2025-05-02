@@ -18,7 +18,7 @@ export function SelectedMovieCard() {
     if(selectedMovie != null){
         return (
         <>
-        <div id="movie" className="w-full xl:w-1/2 text-gray-400 border-1 border-gray-400/30 rounded-2xl p-3 xl:p-0 xl:mr-5 xl:ml-10">
+        <div id="movie" className="w-full xl:w-1/2 text-gray-400 border-1 border-gray-400/30 rounded-2xl p-3 xl:p-0">
             <div className="xl:h-70">
              <div className="self-center">
                   <img 

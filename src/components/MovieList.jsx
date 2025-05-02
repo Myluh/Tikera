@@ -7,7 +7,7 @@ export function MovieList() {
     const { selectedDay } = useContext(SelectedDayContext);
     return (
     <>
-        <div className="flex gap-5 flex-wrap justify-center lg:justify-start lg:ml-8 w-full lg:w-1/2">
+        <div className="flex gap-4 flex-wrap justify-center xl:justify-start w-full xl:w-1/2 mb-5">
         {movies.filter(movie => movie.screenings.some(screening => screening.weekday == selectedDay)).map(movie => (
         <MovieListCard
           movie={movie}

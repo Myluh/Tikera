@@ -15,9 +15,9 @@ export function SeatSelector({tickets}){
             Seats[booking.row-1][booking.seat-1] = 1;
         });
         return (
-        <div className="text-gray-400 border-1 border-gray-400/30 rounded-2xl m-5">
-            <div className="lg:flex">
-                <div className="lg:w-3/7">
+        <div className="text-gray-400 border-1 border-gray-400/30 rounded-2xl m-5 p-2">
+            <div className="flex flex-col lg:flex-row justify-center items-center lg:items-start">
+                <div className="w-full xl:w-2/7 2xl:w-3/7">
                     {Object.keys(tickets[0]).map((ticket, index) => (
                         <TicketType key={index} ticket={ticket} tickets={tickets}/>
                     ))}
@@ -26,7 +26,7 @@ export function SeatSelector({tickets}){
                     </div> */}
                     <SummaryCard tickets={tickets}></SummaryCard>
                 </div>
-                <div className="lg:w-4/7 flex flex-col lg:items-end p-2">
+                <div className="w-full xl:w-5/7 2xl:w-4/7 flex flex-col items-center xl:items-end p-2">
                     <SeatList Seats={Seats}></SeatList>
                 </div>
             </div>
