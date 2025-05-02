@@ -43,7 +43,8 @@ export function ReservationCard({tickets}){
     });
     if(ticketNumber > 0 && selectedSeats.length == ticketNumber){
         return(
-            <div className="flex border-1 border-gray-400/30 rounded-2xl p-7 m-4">
+            <div className="flex flex-col items-center border-1 border-gray-400/30 rounded-2xl p-7 m-4
+                            sm:flex-row ">
                 <div className="w-1/2">
                     <div className="text-white text-lg font-semibold">{selectedMovie.title}</div>
                     <div className="mb-3">{selectedDay} - {selectedScreening.start_time}</div>
@@ -83,7 +84,7 @@ export function ReservationCard({tickets}){
                     </div>
                 </div>
                 <div className="flex flex-col w-1/2 justify-center items-end lg:mr-20 pl-3">
-                    <button className="cursor-pointer bg-lime-400 text-black transition duration-300 ease-in-out rounded-2xl lg:px-3 lg:py-2 px-1 py-2 font-semibold"
+                    <button className="cursor-pointer bg-lime-400 text-black transition duration-300 ease-in-out rounded-2xl px-3 py-2 font-semibold"
                     onClick={ReserveSeats}>
                         Finalize reservation
                     </button>
