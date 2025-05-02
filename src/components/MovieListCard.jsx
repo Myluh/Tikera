@@ -20,7 +20,7 @@ export function MovieListCard({movie}) {
 
   }
   return(
-    <div className={"p-3 w-56 relative bg-gray-950 text-gray-500 shadow-lg rounded-xl flex flex-col items-start border-1 transition duration-300 ease-in-out cursor-pointer " + 
+    <div className={"p-3 w-56 h-86 relative bg-gray-950 text-gray-500 shadow-lg rounded-xl flex flex-col items-start border-1 transition duration-300 ease-in-out cursor-pointer " + 
       ((selectedMovie != null && movie.id == selectedMovie.id) ? "hover:bg-gray-900 border-lime-400" : "border-gray-950 hover:bg-gray-900")}
       onClick={() => {handleClick(movie)}}
       >

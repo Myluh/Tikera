@@ -24,7 +24,7 @@ export function MenuButton({ weekday, toggleMenu }) {
     else{
         return(
             <>
-                <button onClick={() => handleClick(weekday)}s className={"cursor-pointer bg-slate-200/20 hover:bg-slate-200/30 text-lime-500 border-lime-500 transition duration-300 ease-in-out border-1  w-30 h-10 text-sm " + (weekday == "Monday" ? "lg:rounded-l-2xl" : (weekday == "Sunday" ? "lg:rounded-r-2xl" : ""))}>{weekday}</button>
+                <button onClick={() => handleClick(weekday)} className={"cursor-pointer bg-slate-200/20 hover:bg-slate-200/30 text-lime-500 border-lime-500 transition duration-300 ease-in-out border-1  w-30 h-10 text-sm " + (weekday == "Monday" ? "lg:rounded-l-2xl" : (weekday == "Sunday" ? "lg:rounded-r-2xl" : ""))}>{weekday}</button>
             </>
         )
     }

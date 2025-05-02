@@ -45,7 +45,7 @@ export function ReservationCard({tickets}){
         return(
             <div className="flex flex-col items-center border-1 border-gray-400/30 rounded-2xl p-7 m-4
                             sm:flex-row ">
-                <div className="w-1/2">
+                <div className="w-full sm:w-1/2">
                     <div className="text-white text-lg font-semibold">{selectedMovie.title}</div>
                     <div className="mb-3">{selectedDay} - {selectedScreening.start_time}</div>
                     {Object.keys(selectedTickets[0]).map((key, index) => {
@@ -83,8 +83,8 @@ export function ReservationCard({tickets}){
                         <hr className="my-3 w-full text-gray-400/30"/>
                     </div>
                 </div>
-                <div className="flex flex-col w-1/2 justify-center items-end lg:mr-20 pl-3">
-                    <button className="cursor-pointer bg-lime-400 text-black transition duration-300 ease-in-out rounded-2xl px-3 py-2 font-semibold"
+                <div className="flex flex-col w-full sm:w-1/2 justify-center items-center xl:items-end pl-3">
+                    <button className="cursor-pointer bg-lime-400 text-black transition duration-300 ease-in-out rounded-2xl px-4 py-3 font-semibold"
                     onClick={ReserveSeats}>
                         Finalize reservation
                     </button>
